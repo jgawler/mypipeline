@@ -274,6 +274,30 @@
                     "hidden": true
                 }
             }
+        },
+        "new_group_1": {
+            "title": "New Group 1",
+            "type": "object",
+            "description": "",
+            "default": "",
+            "properties": {
+                "adapters": {
+                    "type": "string",
+                    "description": "This is adapters",
+                    "fa_icon": "fab fa-accessible-icon"
+                },
+                "save_trimmed_fail": {
+                    "type": "boolean",
+                    "description": "This is save trimmed fail",
+                    "fa_icon": "fas fa-air-freshener"
+                },
+                "save_merged": {
+                    "type": "boolean",
+                    "description": "This is save merged",
+                    "fa_icon": "fab fa-affiliatetheme"
+                }
+            },
+            "fa_icon": "fas fa-ambulance"
         }
     },
     "allOf": [
@@ -291,6 +315,9 @@
         },
         {
             "$ref": "#/definitions/generic_options"
+        },
+        {
+            "$ref": "#/definitions/new_group_1"
         }
     ]
 }
